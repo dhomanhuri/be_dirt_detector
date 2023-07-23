@@ -47,8 +47,8 @@ def count_pixels(image):
     hsv_image = cv2.cvtColor(cv2.imread(image), cv2.COLOR_BGR2HSV)
     
     # Menentukan rentang warna yang ingin dideteksi
-    greenLower = (0, 0, 142)
-    greenUpper = (135, 147, 198)
+    greenLower = (0, 0, 102)
+    greenUpper = (226, 33, 255)
     
     # Membuat mask dengan warna yang ingin dideteksi
     mask = cv2.inRange(hsv_image, greenLower, greenUpper)
