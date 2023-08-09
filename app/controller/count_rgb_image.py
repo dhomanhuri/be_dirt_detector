@@ -7,7 +7,7 @@ import uuid
 from werkzeug.utils import secure_filename
 
 
-def calculate_average_rgb(image_path):
+def calculate_average_rgb():
     try:
         judul = request.form.get('judul')
         if 'file' not in request.files:
