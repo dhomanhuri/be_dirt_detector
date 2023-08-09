@@ -18,5 +18,5 @@ def fileupload():
 
 
 @app.route('/file-upload-rgb', methods=['POST'])
-def fileupload2():
+def fileuploadrgb():
     return count_rgb_image.calculate_average_rgb()

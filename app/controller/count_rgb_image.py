@@ -26,7 +26,6 @@ def calculate_average_rgb():
             # pixels = count_pixels('upload/'+renamefile)
             image = cv2.imread('upload/'+renamefile)
             height, width, _ = image.shape
-
             total_r = 0
             total_g = 0
             total_b = 0
@@ -47,9 +46,9 @@ def calculate_average_rgb():
             # return average_r, average_g, average_b
             return response.success(
                 {
-                    'r': average_r,
-                    'g': average_g,
-                    'b': average_b
+                    'r': str(average_r),
+                    'g': str(average_g),
+                    'b': str(average_b)
                 }, "Success upload file"
             )
         else:
@@ -57,3 +56,4 @@ def calculate_average_rgb():
         # return response.success("controller running","success")
     except Exception as e:
         print(e)
+        print("e")
