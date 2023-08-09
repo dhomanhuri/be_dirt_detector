@@ -19,3 +19,5 @@ jobs:
           script: |
             cd /var/www/html/be_dirt_detector
             git pull origin main
+            sh stop.sh
+            sh start.sh
