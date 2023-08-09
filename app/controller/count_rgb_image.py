@@ -46,9 +46,11 @@ def calculate_average_rgb():
             # return average_r, average_g, average_b
             return response.success(
                 {
-                    'r': str(average_r),
-                    'g': str(average_g),
-                    'b': str(average_b)
+                    '_r': str(average_r),
+                    '_g': str(average_g),
+                    '_b': str(average_b),
+                    'widht': str(width),
+                    'height': str(height)
                 }, "Success upload file"
             )
         else:
