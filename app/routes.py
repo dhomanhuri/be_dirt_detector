@@ -20,3 +20,18 @@ def fileupload():
 @app.route('/file-upload-rgb', methods=['POST'])
 def fileuploadrgb():
     return count_rgb_image.calculate_average_rgb()
+
+
+# @app.route('/file-upload-rgb', methods=['POST'])
+# def fileuploadrgb():
+#     return count_rgb_image.calculate_average_rgb()
+
+
+@app.route('/file-upload-toiled', methods=['POST'])
+def fileuploadtoiled():
+    return count_rgb_image.calculate_average_toilet()
+
+
+@app.route('/file-upload-kloset', methods=['POST'])
+def fileuploadkloset():
+    return count_rgb_image.calculate_average_kloset()
