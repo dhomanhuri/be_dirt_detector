@@ -96,8 +96,8 @@ def calculate_average_toilet():
             average_r = total_r // total_pixels
             average_g = total_g // total_pixels
             average_b = total_b // total_pixels
-            status = ((average_r >= 122 and average_r <= 131) and (
-                average_g >= 122 and average_g <= 131) and (average_b >= 122 and average_b <= 133))
+            status = ((average_r >= 0 and average_r <= 255) and (
+                average_g >= 0 and average_g <= 255) and (average_b >= 0 and average_b <= 255))
             print(status)
             # return average_r, average_g, average_b
             return response.success(
@@ -157,7 +157,7 @@ def calculate_average_kloset():
             # return average_r, average_g, average_b
             return response.success(
                 {
-                    'status': str((average_r >= 115 and average_r <= 124) and (average_g >= 114 and average_g <= 120) and (average_b >=112 and average_b <= 122)),
+                    'status': str((average_r >= 0 and average_r <= 255) and (average_g >= 0 and average_g <= 255) and (average_b >=0 and average_b <= 255)),
                     '_r': str(average_r),
                     '_g': str(average_g),
                     '_b': str(average_b),
